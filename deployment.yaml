@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: node-image-fetcher-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: node-image-fetcher
+  template:
+    metadata:
+      labels:
+        app: node-image-fetcher
+    spec:
+      containers:
+      - name: node-image-fetcher
+        image: your-registry/node-image-fetcher:latest
+        ports:
+        - containerPort: 80

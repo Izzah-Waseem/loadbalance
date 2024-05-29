@@ -1,0 +1,14 @@
+{
+    "name": "node-image-fetcher",
+    "version": "1.0.0",
+    "description": "A Node.js application to fetch images using API calls",
+    "main": "app.js",
+    "scripts": {
+      "start": "node app.js"
+    },
+    "dependencies": {
+      "axios": "^0.21.1",
+      "express": "^4.17.1"
+    }
+  }
+  
